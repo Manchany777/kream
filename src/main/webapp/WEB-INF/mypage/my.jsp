@@ -99,7 +99,11 @@
         </ul>
     </div><!-- header -->
 </header>
-
+<content>
+    <div>
+        <h1>테스트</h1>
+    </div>
+</content>
 <footer>
     <div id="footertop">
         <div id="footer1">
@@ -135,8 +139,6 @@
         </div>
 
     </div>
-
-
     <div id="footer">
         <dl class="btmnav">
             <dt class="blind">bottom navigation</dt>
@@ -156,7 +158,6 @@
         </p>
     </div><!-- footer -->
 </footer>
-
 </div><!-- wrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

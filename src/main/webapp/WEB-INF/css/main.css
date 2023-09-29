@@ -100,7 +100,7 @@ a.title{
 	padding:0px 0px 10px 20px;
 	margin-right:0px;
 	margin-left:20px;
-	background:url("image/bg_topnav.png") no-repeat 100% 50%;
+	background:url("img/bg_topnav.png") no-repeat 100% 50%;
 }
 .topnav2 dd a{
 	color:black;
@@ -112,6 +112,7 @@ a.title{
 	padding:0 0 0 11%;
 	margin-bottom:2px;
 	background-color:#ffffff;
+	border: 1px solid red;
 }
 
 .mainnav:after{
@@ -267,6 +268,7 @@ a.title{
     display: flex;
     flex-direction: row; /* 가로로 나열 */
     align-items: center; /* 요소들을 세로 가운데 정렬 */
+	border: 1px solid red;
 }
 
 #guide,
