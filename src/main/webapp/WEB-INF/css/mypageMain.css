@@ -1,0 +1,54 @@
+/* 슬라이드 관련 CSS */
+.slide_category{
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    position: relative;
+    width: 55%; /* 변경된 너비 */
+    margin: auto;
+    height: 120px;
+    overflow:hidden;
+}
+.slides li{
+    list-style:none;
+}
+.slides{
+    position: absolute;
+    white-space: nowrap; /* 요소들이 한 줄로 나오게 함 */
+}
+.slides.animated{
+    transition: 0.5s ease-out;
+}
+.slides li{
+    width: 100px;
+    height: 120px;
+    background: url("../img/bg_topnav.png");
+    display: inline-block; /* 요소들이 겹치지 않고 한 줄로 표시됨 */
+    vertical-align: top; /* 상단 정렬 (원하는 정렬 방식으로 변경 가능) */
+    margin-right: 30px;
+}
+.slides li:not(:last-child){
+    margin-right: 30px;
+}
+.controls{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.controls span{
+    background:#333;
+    color: #fff;
+    padding:10px 20px;
+    margin:0 10px;
+}
+.category.active .subcategories {
+    display: block;
+}
+figcaption{
+    color:#333;
+    margin:5px;
+    font-size:0.8em;
+}
+div {
+    /*border: 1px solid red;*/
+}

@@ -230,10 +230,13 @@ a.title{
 
 /* footer start */
 #footer {
-	border-top: 1px solid #cccccc;
+	/*border-top: 1px solid #cccccc;*/
 	padding : 18px 30px 40px 20px;
 	color: #666;
 	font-size:0.9em;
+	border-left: 1px solid red !important;
+	border-right: 1px solid red !important;
+	border-bottom: 1px solid red !important;
 }
 #footer:after{
 	content:'';
@@ -264,14 +267,15 @@ a.title{
   display: none;
 }
 
-#footer1 {
-    display: flex;
-    flex-direction: row; /* 가로로 나열 */
-    align-items: center; /* 요소들을 세로 가운데 정렬 */
-	border: 1px solid red;
-}
+/*#footer1 {*/
+/*    display: flex;*/
+/*    flex-direction: row; !* 가로로 나열 *!*/
+/*    align-items: center; !* 요소들을 세로 가운데 정렬 *!*/
+/*	border: 1px solid red;*/
+/*}*/
 
 #guide,
+#guidenav,
 #Support,
 .supportTel {
     flex: 1; /* 가로 공간을 골고루 차지 */
@@ -284,9 +288,22 @@ a.title{
     padding: 20px; /* 내부 여백 설정 (선택사항) */
     color:black;
     text-decoration:none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 .carousel_hr{
 	width: 76%;
     margin: 0 auto; /* 가운데 정렬을 원한다면 추가 */
 }
 /* footer end */
+
+/* MyPage */
+div {
+	border: 1px solid red;
+}
+#myContent {
+	position : relative;
+	float : right;
+	width : 100%;
+}
