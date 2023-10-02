@@ -36,7 +36,7 @@
 <%--                <c:otherwise>--%>
 <%--                    <jsp:include page="defaultMain.jsp" />--%>
 <%--                </c:otherwise>--%>
-<%--            </c:choose>--%>
+            </c:choose>
         </div>
     </div>
 </content>

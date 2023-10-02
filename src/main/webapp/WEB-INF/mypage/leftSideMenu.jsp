@@ -50,7 +50,7 @@
             <li><a href="address">주소록</a></li>
             <li><a href="payment">결제 정보</a></li>
             <li><a href="${pageContext.request.contextPath}/my/board">문의 내역글 조회</a></li>
-            <li><a href="${pageContext.request.contextPath}/my?menu=comment">후기 댓글 조회</a></li>
+            <li><a href="${pageContext.request.contextPath}/my/comment">후기 댓글 조회</a></li>
         </ul>
     </div>
 </nav>
