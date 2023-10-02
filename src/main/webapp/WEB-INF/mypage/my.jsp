@@ -20,23 +20,24 @@
 
 
 <content>
-    <div style="float: left; width: 30%;">
+    <div style="float: left; width: 20%;">
         <jsp:include page="leftSideMenu.jsp" />
     </div>
 
-    <div style="float: left; width: 70%;">
+    <div style="float: left; width: 80%;">
 <%--        <h1>Menu Content</h1>--%>
-    <div id="myContent">
-    <!-- 이 부분에 메뉴 클릭에 따른 내용이 비동기적으로 로드될 것입니다. -->
-        <c:choose>
-            <c:when test="${param.menu == 'comment'}">
-                <jsp:include page="comment.jsp" />
-            </c:when>
-    </div>
-            <c:otherwise>
-                <jsp:include page="defaultMain.jsp" />
-            </c:otherwise>
-        </c:choose>
+        <div id="myContent">
+        <!-- 비동기 로드 -->
+            <jsp:include page="defaultMain.jsp" />
+<%--            <c:choose>--%>
+<%--                <c:when test="${param.menu == 'comment'}">--%>
+<%--                    <jsp:include page="comment.jsp" />--%>
+<%--                </c:when>--%>
+<%--                <c:otherwise>--%>
+<%--                    <jsp:include page="defaultMain.jsp" />--%>
+<%--                </c:otherwise>--%>
+<%--            </c:choose>--%>
+        </div>
     </div>
 </content>
 

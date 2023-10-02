@@ -56,8 +56,32 @@
 </nav>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<%--<script>
+    $(document).ready(function() {
+        $("ul li a").on("click", function(e) {
+            e.preventDefault();
+            var url = $(this).attr("href");
+            $.ajax({
+                url: url,
+                method: "GET",
+                success: function(response) {
+                    $("#myContent").html(response);
+                }
+            });
+        });
+    });
+</script>--%>
 <script>
     $(document).ready(function() {
+        // 초기에 defaultMain.jsp를 로드하도록 설정합니다.
+        $.ajax({
+            url: "defaultMain.jsp", // defaultMain.jsp로 변경 필요할 수 있습니다.
+            method: "GET",
+            success: function(response) {
+                $("#myContent").html(response);
+            }
+        });
+
         $("ul li a").on("click", function(e) {
             e.preventDefault();
             var url = $(this).attr("href");

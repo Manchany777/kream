@@ -19,9 +19,15 @@ public class MypageController {
         return "/mypage/defaultMain";
     }
 
+    @GetMapping("/my/board")
+    public String showBoard(Model model) {
+        model.addAttribute("myContent", "This is the board page content.");
+        return "/mypage/board";
+    }
+
     @GetMapping("/my/comment")
     public String showComment(Model model) {
-        model.addAttribute("myContent", "This is the Contact page content.");
+        model.addAttribute("myContent", "This is the comment page content.");
         return "/mypage/comment";
     }
 }
